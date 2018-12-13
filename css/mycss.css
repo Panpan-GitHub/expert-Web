@@ -1,9 +1,16 @@
 
 @font-face {
-    font-family: 'real-header';
-    src: url('../font/衡山毛筆KouzanBrushFont.ttf') format("truetype");;
+    font-family: 'maobi';
+    src: url('../font/KouzanBrushFont.ttf') format("truetype");
+    src: url('../font/KouzanBrushFont.ttf');
   }
 
   .maobi {
-    font-family: 'real-header', sans-serif
+    font-family: 'maobi'
+  }
+
+  @font-face {
+    font-family: 'maobi2';
+    src: url('../font/毛泽东字体.ttf') format("truetype");
+    src: url('../font/毛泽东字体.ttf');
   }
