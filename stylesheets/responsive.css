@@ -1,0 +1,249 @@
+/* Media Queries
+-------------------------------------------------------------- */
+
+/* Smaller than standard 1200 */
+@media only screen and (max-width: 1199px) {
+	code here...
+}
+
+/* Smaller than standard 992 */
+@media only screen and (max-width: 991px) {
+	.btn-menu,
+	.header-widgets {
+		display: block ;
+	}
+
+	.header .header-wrap .menu-extra,
+	#mainnav,
+	.header.header-v2 #mainnav {
+		display: none;
+	}
+
+	#site-header #headerbar .social-links a,
+	#site-header #headerbar .top-navigator .menu li {
+		display: inline-block;
+	}
+
+	.widget.widget-recentpost ul li {
+		clear: left;
+	}
+
+	.btn-menu {
+		position: relative;
+		top: 0;
+	}
+
+	#site-header #headerbar,
+	.client .wrap-img-client,
+	.site-brand .site-logo,
+	.header-widgets {
+		text-align: center;
+	}
+
+	#site-header #headerbar .custom-info,
+	#site-header #headerbar .social-links,
+	#site-header #headerbar .top-navigator,
+	#site-header #headerbar .social-links a,
+	#site-header #headerbar .top-navigator .menu li,
+	.site-brand .site-logo,
+	.header-widgets,
+	.widget.widget-recentpost ul li,
+	.blog.blog-medium .entry .feature-post.object,
+	.widget.widget_price_filter .price_slider_amount button[type="submit"] {
+		float: none;
+	}
+
+	.header.header-v2 .header-wrap .nav-wrap {
+		float: right;
+	}
+
+	.header.header-v2 .site-navigator,
+	.header-transparent {
+		position: relative;
+	}
+
+	#site-header #headerbar .top-navigator {
+		margin-bottom: 5px;
+	}
+
+	#site-header #headerbar .custom-info,
+	#site-header #headerbar .social-links,
+	.client .wrap-img-client,
+	.flat-clients,
+	.flat-project .project-filter li {
+		margin-bottom: 15px;
+	}
+
+	.images-single-flexslider,
+	.header-widgets .widget,
+	.flat-imagebox,
+	.flat-iconlist,
+	.flat-price-products .pp1,
+	.flat-price-products .pp2,
+	.flat-icontext,
+	.flat-shop-by,
+	.images-single.style1,
+	.blog.blog-medium .entry,
+	.single-products .single-img {
+		margin-bottom: 30px;
+	}
+
+	.header-widgets .widget {
+		margin-right: 30px;
+	}
+
+	.header-widgets .widget {
+		margin-left: 30px;
+	}
+
+	.header-widgets .widget,
+	.images-single.style2 {
+		margin-top: 0;
+	}
+
+	.flat-about-us {
+		margin-bottom: 50px;
+	}
+
+	.header.header-v2 {
+		padding-bottom: 0;
+	}
+
+	.sidebar,
+	.content-left .project-gallery-wrap.entry,
+	.single-products .summary {
+		padding-left: 0;
+	}
+
+	.blog.sidebar-left .post-wrap,
+	.content-right .project-gallery-wrap.entry {
+		padding-right: 0;
+	}
+
+	.client .wrap-img-client,
+	.four-columns .object,
+	.products-content.w25 .products li,
+	.products-content .products li {
+		width: 50%;
+	}
+
+	.three-columns .images-single.object,
+	.site-footer .widget.widget_nav_menu,
+	.site-footer #text01,
+	.flat-row .three-columns .object,
+	.flat-row .flat-project .five-columns .object,
+	.flat-iconbox.object,
+	.services .two-columns .object,
+	.services-pricing .three-columns .object,
+	.services-detail .two-columns .object,
+	.blog.blog-medium .entry .feature-post.object,
+	.box.related-posts-box.three-columns .object,
+	.projects.projects-grid .projects-items .entry,
+	.products-content,
+	.products-sidebars,
+	.single-products .single-img,
+	.single-products .summary {
+		width: 100%;
+	}
+
+	.parallax.parallax1 {
+		background-position: 0 0 !important;
+	}
+
+	.site-footer {
+		background-size: cover;
+	}
+
+}
+
+/* Tablet Landscape */
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+
+/* Tablet Portrait Size */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {	
+	.site-footer .social-links,
+	.site-footer .social-links a {
+		float: none;
+	}
+
+	.site-footer .social-links a {
+		display: inline-block;
+	}
+
+	.copyright {
+		text-align: center;
+	}
+
+	.site-footer .social-links {
+		margin-bottom: 15px;
+	}
+
+	#pricing .three-columns .object,
+	.gallery.gallery-v3 .flat-project .project-wrap.three-columns .object {
+		width: 100%;
+	}
+
+}
+
+/* Mobile Landscape Size */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+}
+
+/* Mobile Portrait Size */
+@media only screen and (max-width: 479px) {
+	.four-columns .object,
+	.client .wrap-img-client,
+	.footer-info .two-columns .object,
+	.products-content.w25 .products li,
+	.blog .post-wrap.two-columns .entry.object,
+	.gallery.gallery-grid .three-columns .object,
+	.products-content .products li {
+		width: 100%;
+	}
+
+	.flat-accordion.style1 h3.toggle-title {
+		font-size: 20px;
+	}
+
+	.flat-tabs ul.menu-tabs li {
+		float: none;
+	}
+
+	.header .header-wrap .logo {
+		width: 120px;
+	}
+
+}
+
+@media (max-width: 320px) {	
+	
+}
+
+/* Retina Devices */
+	@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (   -moz-min-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) {
+
+	.flat-accordion .toggle-title:after {
+		background: url("../images/icon/add@2x.png");
+		background-size: 26px 26px;
+	}
+
+	.widget_search .search-form .search-submit {
+		background: url("../images/icon/search-icon@2x.png");
+		background-size: 30px 30px;
+	}
+}

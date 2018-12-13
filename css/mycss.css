@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'real-header';
+    src: url('../font/衡山毛筆KouzanBrushFont.ttf') format("truetype");;
+  }
+
+  .maobi {
+    font-family: 'real-header', sans-serif
+  }
