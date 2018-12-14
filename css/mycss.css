@@ -1,16 +1,63 @@
+@font-face {
+  font-family: 'maobi';
+  src: url('../font/KouzanBrushFont.ttf') format("truetype");
+  src: url('../font/KouzanBrushFont.ttf');
+}
+
+.maobi {
+  font-family: 'maobi'
+}
 
 @font-face {
-    font-family: 'maobi';
-    src: url('../font/KouzanBrushFont.ttf') format("truetype");
-    src: url('../font/KouzanBrushFont.ttf');
-  }
+  font-family: 'maobi2';
+  src: url('../font/毛泽东字体.ttf') format("truetype");
+  src: url('../font/毛泽东字体.ttf');
+}
 
-  .maobi {
-    font-family: 'maobi'
-  }
+.float-right {
+  float: right;
+}
 
-  @font-face {
-    font-family: 'maobi2';
-    src: url('../font/毛泽东字体.ttf') format("truetype");
-    src: url('../font/毛泽东字体.ttf');
-  }
+.float-left {
+  float: left;
+}
+
+.more {
+  margin-right: 4rem;
+}
+
+.mylist {
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+.margin-top-39 {
+  margin-top: 39px;
+}
+
+.font-size-10 {
+  font-size: 10px;
+}
+
+.font-size-15 {
+  font-size: 15px;
+}
+
+.avatar {
+  height: 90px;
+  width: 90px;
+  border-radius:50%;
+}
+
+.owner {
+  font-size: 30px;
+  margin-left: 50px;
+  font-family: 'maobi2'
+}
+
+.num {
+  width: 100%;
+  text-align: center;
+  float: left;
+}
