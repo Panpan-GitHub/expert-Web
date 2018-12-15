@@ -36,6 +36,15 @@
   margin-top: 2.4375rem;
 }
 
+.margin-top-50{
+  margin-top: 3.125rem;
+}
+
+
+.margin-right-40{
+  margin-right: 2.5rem;
+}
+
 .font-size-10 {
   font-size: .625rem;
 }
@@ -54,8 +63,8 @@
 }
 
 .owner {
-  font-size: 30px;
-  margin-left: 20px;
+  font-size: 1.875rem;
+  margin-left: 1.25rem;
   font-family: 'maobi2'
 }
 
@@ -67,7 +76,7 @@
 }
 
 .numa {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   
 }
@@ -81,4 +90,8 @@
   margin-top: 1.5625rem;
   float: left;
   text-indent: 1rem;
+}
+
+.maxwidth {
+  width: 100%;
 }
