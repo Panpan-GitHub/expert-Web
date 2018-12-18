@@ -23,7 +23,7 @@
 }
 
 .more {
-  margin-right: 4rem;
+  margin-right: 64px;
 }
 
 .mylist {
@@ -33,51 +33,58 @@
 }
 
 .margin-top-39 {
-  margin-top: 2.4375rem;
+  margin-top: 39px;
 }
 
 .margin-top-25 {
-  margin-top: 1.5625rem;
+  margin-top: 25px;
 }
 
-
 .margin-right-40 {
-  margin-right: 2.5rem;
+  margin-right: 40px;
+}
+
+.margin-right-20 {
+  margin-right: 20px;
 }
 
 .font-size-10 {
-  font-size: .625rem;
+  font-size: 10px;
 }
 
 .font-size-15 {
-  font-size: .9375rem;
+  font-size: 15px;
 }
 
 .font-size-20 {
-  font-size: 1.25rem
+  font-size: 20px;
+}
+
+.font-size-25 {
+  font-size: 25px;
 }
 
 .avatar {
-  height: 5.625rem;
-  width: 5.625rem;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
 }
 
 .owner {
-  font-size: 1.875rem;
-  margin-left: 1.25rem;
+  font-size: 30px;
+  margin-left: 20px;
   font-family: 'maobi2'
 }
 
 .num {
-  width: 2.5rem;
+  width: 40px;
   text-align: center;
   float: left;
-  margin-left: 1.8rem;
+  margin-left: 28.8px;
 }
 
 .numa {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 500;
 
 }
@@ -88,9 +95,9 @@
 }
 
 .owner-content {
-  margin-top: 1.5625rem;
+  margin-top: 25px;
   float: left;
-  text-indent: 1rem;
+  text-indent: 16px;
 }
 
 .maxwidth {
@@ -103,8 +110,8 @@
   top: 40%;
   z-index: 1000;
   border-radius: 30%;
-  height: 4rem;
-  width: 4rem;
+  height: 64px;
+  width: 64px;
   outline: 0ch;
 }
 
@@ -114,8 +121,8 @@
   top: 50%;
   z-index: 1000;
   border-radius: 30%;
-  height: 4rem;
-  width: 4rem;
+  height: 64px;
+  width: 64px;
 }
 
 .mod-btn3 {
@@ -124,36 +131,134 @@
   top: 60%;
   z-index: 1000;
   border-radius: 30%;
-  height: 4rem;
-  width: 4rem;
+  height: 64px;
+  width: 64px;
 }
 
 .modbtn {
-  width: 9.375rem;
-  height: 3.125rem;
+  width: 150px;
+  height: 50px;
   text-align: center;
-  margin-left: 5.625rem;
+  margin-left: 90px;
   float: left;
   border-radius: 5%;
-  /* border:0.0625rem solid #286090; */
+  /* border:1px solid #286090; */
   background-color: #286090;
-  font-size: 1.125rem;
+  font-size: 18px;
   color: white;
 }
 
 .boder-bottom {
-  border-block-end: 0.0625rem solid #ccc;
+  border-block-end: 1px solid #ccc;
 }
 
 .modbox {
-  height: 100px;
-  width: 100px;
+  height: 6.25rem;
+  width: 6.25rem;
   text-align: center;
   float: left;
-  margin-top: 15px;
-  margin-left: 10px;
+  margin-top: 0.9375rem;
+  margin-left: 0.625rem;
 }
 
 .modpic {
-  font-size: 50px;
+  font-size: 3.125rem;
 }
+
+.upimg {
+  /* position: relative; */
+  float: left;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 0.3125rem;
+  border: dashed #999999;
+  background: url(../img/addimg.svg) no-repeat;
+  background-position: 2.0625rem;
+  margin-bottom: 0.625rem;
+  margin-left: 10px;
+}
+
+.upimg input {
+  position: absolute;
+  width: 6.25rem;
+  height: 6.25rem;
+  opacity: 0;
+}
+
+#showui {
+  /* display: flex; */
+  justify-content: flex-start;
+}
+
+#showui li {
+  width: 9.375rem;
+  height: 9.375rem;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 0.3125rem;
+}
+
+#showui li img.showimg {
+  position: absolute;
+  text-align: center;
+  height: 80px;
+  width: 8.75rem;
+  z-index: 6;
+}
+
+.showdiv {
+  position: absolute;
+  z-index: 9;
+  bottom: 30px;
+  /* left: 5px; */
+  width: calc(100% - 0.625rem);
+  padding: 0.625rem;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, .6);
+}
+
+.showdiv img {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+#showui li:first-child img.left {
+  opacity: .6;
+  cursor: no-drop;
+}
+
+#showui li:last-child img.right {
+  opacity: .6;
+  cursor: no-drop;
+}
+
+.oneright {
+  opacity: .6;
+  cursor: no-drop !important;
+}
+
+.imgbox {
+  margin-left: 0.625rem;
+  border: 1px #777 solid
+}
+
+.maxwidth-80 {
+  max-width: 80px;
+}
+
+/* .imgbox ul li {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 0.3125rem;
+  min-height: 12.5rem;
+} */
+
+/* thumbnails */
+ul.thumbnails.image_picker_selector{overflow:auto;list-style-image:none;list-style-position:outside;list-style-type:none;padding:0px;margin:0px;}
+ul.thumbnails.image_picker_selector li{margin:0px 12px 12px 0px; float:left;}
+ul.thumbnails.image_picker_selector li .thumbnail{padding:6px;border:1px solid #dddddd;max-width: 150px;}
+ul.thumbnails.image_picker_selector li .thumbnail.selected{background:#0088cc;}

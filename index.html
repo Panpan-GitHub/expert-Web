@@ -35,6 +35,7 @@
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="css/mycss.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.dad.css">
+    <link rel="stylesheet" type="text/css" href="css/fileinput.min.css">
 </head>
 
 <body class="header-sticky">
@@ -52,13 +53,48 @@
 
             <!-- Header -->
             <header id="header" class="header clearfix">
-                <div class="container-head">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-12 col-md-offset-1">
+                        <div class="col-md-12">
                             <div class="header-wrap clearfix">
                                 <div id="logo" class="logo">
-                                    <h2 class="maobi">跤鎏通用工作室</h2>
+                                    <div id="logo" class="logo maobi font-size-25">
+                                        跤鎏通用工作室
+                                    </div><!-- /.logo -->
                                 </div><!-- /.logo -->
+                                <div class="nav-wrap">
+                                    <div class="btn-menu"></div><!-- //mobile menu button -->
+                                    <nav id="mainnav" class="mainnav">
+                                        <ul class="menu">
+                                            <li><a href="index.html">首页</a></li>
+                                            <li><a href="#">教师文章</a></li>
+                                            <li><a href="#">教学资源</a></li>
+
+                                            <li><a href="#">名师课堂</a>
+                                                <ul class="submenu">
+                                                    <li><a href="#">公开课</a></li>
+                                                    <li><a href="#">培训讲座</a></li>
+                                                    <li><a href="#">微课</a></li>
+                                                </ul><!-- /.submenu -->
+                                            </li>
+                                            <li><a href="#">教研活动</a></li>
+                                            <li><a href="#">走进工作室 </a></li>
+                                        </ul><!-- /.menu -->
+                                    </nav><!-- /.mainnav -->
+                                    <ul class="menu-extra">
+                                        <li id="s" class="search-box">
+                                            <a href="#search" class="flat-search"><i class="fa fa-search"></i></a>
+                                            <div class="submenu top-search">
+                                                <div class="widget widget_search">
+                                                    <form class="search-form">
+                                                        <input type="search" class="search-field" placeholder="Search …">
+                                                        <input type="submit" class="search-submit">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </li><!-- /.search-box -->
+                                    </ul> <!-- /.menu-extra -->
+                                </div><!-- /.nav-wrap -->
 
                             </div><!-- /.header-wrap -->
                         </div>
@@ -126,54 +162,18 @@
         </div><!--  /.site-header -->
 
         <div id="site-content">
-            <div class="real-head">
+            <!-- <div class="real-head">
 
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="header-wrap clearfix">
-
-                                <div class="nav-wrap">
-                                    <div class="btn-menu"></div><!-- //mobile menu button -->
-                                    <nav id="mainnav" class="mainnav">
-                                        <ul class="menu">
-                                            <li><a href="index.html">首页</a></li>
-                                            <li><a href="#">教师文章</a></li>
-                                            <li><a href="#">教学资源</a></li>
-
-                                            <li><a href="#">名师课堂</a>
-                                                <ul class="submenu">
-                                                    <li><a href="#">公开课</a></li>
-                                                    <li><a href="#">培训讲座</a></li>
-                                                    <li><a href="#">微课</a></li>
-                                                </ul><!-- /.submenu -->
-                                            </li>
-                                            <li><a href="#">教研活动</a></li>
-                                            <li><a href="#">走进工作室 </a></li>
-                                        </ul><!-- /.menu -->
-                                    </nav><!-- /.mainnav -->
-                                    <ul class="menu-extra">
-
-                                        <li id="s" class="search-box">
-                                            <a href="#search" class="flat-search"><i class="fa fa-search"></i></a>
-                                            <div class="submenu top-search">
-                                                <div class="widget widget_search">
-                                                    <form class="search-form">
-                                                        <input type="search" class="search-field" placeholder="Search …">
-                                                        <input type="submit" class="search-submit">
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </li><!-- /.search-box -->
-                                    </ul> <!-- /.menu-extra -->
-                                </div><!-- /.nav-wrap -->
-
-                            </div><!-- /.header-wrap -->
+                            </div>
                         </div>
-                    </div> <!-- /.row -->
-                </div> <!--  /.container -->
+                    </div> 
+                </div> 
 
-            </div>
+            </div> -->
             <!-- Services -->
 
 
@@ -498,6 +498,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div><!-- /.row -->
                 </div><!-- /.container -->
             </section><!-- /.flat-row -->
@@ -577,6 +578,30 @@
             <section class="flat-row flat-bg-white blog blog-grid pad-top70px pad-bottom20px">
                 <div class="container">
                     <div class="row">
+
+                            <div class="col-md-6">
+                                    <div class="flat-text-content object text-center">
+                                            <h3 class="title">WHY WE DO IT BETTER</h3>
+                                            <div> <span style="margin-right:150px;">作者：</span> <span>日期：</span></div>
+                                            <div class="content">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            
+                                                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                            </div>
+                                        </div><!-- /.text-content -->
+                            </div>
+                            <div class="col-md-6">
+                                    <div class="flat-text-content object text-center">
+                                            <h3 class="title">WHY WE DO IT BETTER</h3>
+                                            <div> <span style="margin-right:150px;">作者：</span> <span>日期：</span></div>
+                                            <div class="content">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            
+                                                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                            </div>
+                                        </div><!-- /.text-content -->
+                            </div>
+
                         <div class="col-md-6 col-md-offset-3">
                             <div class="title-section">
                                 <h2 class="title">跤鎏工作室 <span class="typo">&amp;</span>成果展示</h2>
@@ -833,19 +858,19 @@
                                     <!-- Tab panes -->
                                     <div class="tab-content">
                                         <div role="tabpanel" class="tab-pane active" id="home" style="height:6.25rem;">
-                                            <div class="modbox btn"  data-toggle="modal" data-target="#lunbo">
+                                            <div class="modbox btn" data-toggle="modal" data-target="#imglist">
                                                 <div class="modpic glyphicon glyphicon-picture"></div>
                                                 <div class="modname">列表多图</div>
                                             </div>
-                                            <div class="modbox btn">
+                                            <div class="modbox btn" data-toggle="modal" data-target="#textlist">
                                                 <div class="modpic glyphicon glyphicon-list-alt"></div>
                                                 <div class="modname">文章列表</div>
                                             </div>
-                                            <div class="modbox btn">
+                                            <div class="modbox btn" data-toggle="modal" data-target="#filelist">
                                                 <div class="modpic glyphicon glyphicon-download-alt"></div>
                                                 <div class="modname">文件下载</div>
                                             </div>
-                                            <div class="modbox btn">
+                                            <div class="modbox btn" data-toggle="modal" data-target="#singletxt">
                                                 <div class="modpic glyphicon glyphicon-book"></div>
                                                 <div class="modname">单篇文章</div>
                                             </div>
@@ -951,42 +976,89 @@
                                 <div>
                                     <!-- Nav tabs -->
                                     <!-- <ul class="nav boder-bottom" role="tablist" style="  padding-bottom: 10px;">
-                                        <li role="presentation" class="active"><a class="modbtn" href="#home"
-                                                aria-controls="home" role="tab" data-toggle="tab">新建模块</a></li>
-                                        <li role="presentation"><a class="modbtn" href="#profile" aria-controls="profile"
-                                                role="tab" data-toggle="tab">模块管理</a></li>
-                                    </ul> -->
+                                            <li role="presentation" class="active"><a class="modbtn" href="#home"
+                                                    aria-controls="home" role="tab" data-toggle="tab">新建模块</a></li>
+                                            <li role="presentation"><a class="modbtn" href="#profile" aria-controls="profile"
+                                                    role="tab" data-toggle="tab">模块管理</a></li>
+                                        </ul> -->
 
                                     <!-- Tab panes -->
                                     <div class="tab-content">
                                         <div role="tabpanel" class="tab-pane active" id="home" style="height:6.25rem;">
-                                            <div class="modbox btn">
-                                                <div class="modpic glyphicon glyphicon-picture"></div>
-                                                <div class="modname">列表多图</div>
-                                            </div>
-                                            <div class="modbox btn">
-                                                <div class="modpic glyphicon glyphicon-list-alt"></div>
-                                                <div class="modname">文章列表</div>
-                                            </div>
-                                            <div class="modbox btn">
-                                                <div class="modpic glyphicon glyphicon-download-alt"></div>
-                                                <div class="modname">文件下载</div>
-                                            </div>
-                                            <div class="modbox btn">
-                                                <div class="modpic glyphicon glyphicon-book"></div>
-                                                <div class="modname">单篇文章</div>
-                                            </div>
-                                            <div class="modbox btn">
-                                                <div class="modpic glyphicon glyphicon-facetime-video"></div>
-                                                <div class="modname">在线视频</div>
-                                            </div>
+
                                         </div>
-                             
+
                                     </div>
                                 </div>
                             </form>
                         </div>
                         <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            <!-- <button type="button" class="btn btn-primary">保存</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 图片管理列表 -->
+            <div class="modal fade" id="imglist" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="">图片管理</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home">
+                                            <div style="width: 600px;">
+                                                <h6 style="margin-top:16px;;margin-left: 10px; float: left;margin-bottom: 0;">模块名称：</h6>
+                                                <input type="text" class="form-control" id="exampleInputName2"
+                                                    placeholder="Modular name" style="width:300px;">
+                                            </div>
+
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane active" id="home" style="min-height:6.25rem;">
+                                            <h6 style="margin-top:10px;margin-left: 10px; ">上传图片：</h6>
+                                            <div style="width: 100%;">
+                                                <div id="showimg">
+                                                    <ul id="showui">
+                                                        <div id="showimg">
+                                                            <div class="upimg margin-right-20">
+                                                                <input type="file" id="upgteimg" value="" multiple />
+                                                            </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane active" id="home" style="min-height:6.25rem;margin-top: 50px;">
+                                            <h6 style="margin-left: 10px;">我的图片：</h6>
+                                            <div class="imgbox">
+                                                <div class="picker">
+                                                    <select class="image-picker" data-limit="3" multiple="multiple"
+                                                        style="display:none">
+                                                        <option class="maxwidth-80" data-img-src='img/1.jpg' value='1'>Cute
+                                                            Kitten 1</option>
+                                                        <option class="maxwidth-80" data-img-src='img/2.jpg' value='2'>Cute
+                                                            Kitten 2</option>
+                                                        <option class="maxwidth-80" data-img-src='img/3.jpg' value='3'>Cute
+                                                            Kitten 3</option>
+                                                        <option class="maxwidth-80" data-img-src='img/addimg.svg' value='4'>Cute
+                                                            Kitten 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default">上传图片</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">使用图片</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                             <!-- <button type="button" class="btn btn-primary">保存</button> -->
                         </div>
@@ -1007,35 +1079,173 @@
                             <form>
                                 <div>
                                     <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane active" id="home" style="height:6.25rem;">
-                                            <div class="modbox btn">
-                                                <div class="modpic glyphicon glyphicon-picture"></div>
-                                                <div class="modname">列表多图</div>
-                                            </div>
-                                            <div class="modbox btn">
-                                                <div class="modpic glyphicon glyphicon-list-alt"></div>
-                                                <div class="modname">文章列表</div>
-                                            </div>
-                                            <div class="modbox btn">
-                                                <div class="modpic glyphicon glyphicon-download-alt"></div>
-                                                <div class="modname">文件下载</div>
-                                            </div>
-                                            <div class="modbox btn">
-                                                <div class="modpic glyphicon glyphicon-book"></div>
-                                                <div class="modname">单篇文章</div>
-                                            </div>
-                                            <div class="modbox btn">
-                                                <div class="modpic glyphicon glyphicon-facetime-video"></div>
-                                                <div class="modname">在线视频</div>
+                                        <div role="tabpanel" class="tab-pane active" id="home" style="min-height:6.25rem;">
+                                            <h6 style="margin-top:0;margin-left: 10px; ">上传图片：</h6>
+                                            <div style="width: 100%;">
+                                                <div id="showimg">
+                                                    <ul id="showui">
+                                                        <div id="showimg">
+                                                            <div class="upimg margin-right-20">
+                                                                <input type="file" id="upgteimg" value="" multiple />
+                                                            </div>
+                                                    </ul>
+
+                                                </div>
                                             </div>
                                         </div>
-                             
                                     </div>
                                 </div>
                             </form>
                         </div>
                         <div class="modal-footer">
+                            <button type="button" class="btn btn-default">开始上传</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            <!-- <button type="button" class="btn btn-primary">保存</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 文章上传 -->
+            <div class="modal fade" id="textlist" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="">文章列表</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home">
+                                            <div style="width: 600px;">
+                                                <h6 style="margin-top:16px;;margin-left: 10px; float: left;margin-bottom: 0;">模块名称：</h6>
+                                                <input type="text" class="form-control" id="exampleInputName2"
+                                                    placeholder="Modular name" style="width:300px;">
+                                            </div>
+
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane active" id="home" style="min-height:6.25rem;">
+                                            <h6 style="margin-top:10px;margin-left: 10px; ">上传文档：</h6>
+                                            <div style="width: 100%;">
+                                                <div class="container kv-main" style="width: 850px;">
+                                                    <br>
+                                                    <form enctype="multipart/form-data">
+
+                                                        <div class="form-group">
+                                                            <input id="file-1" type="file" multiple class="file"
+                                                                data-overwrite-initial="false" data-min-file-count="2">
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                            <!-- <button type="button" class="btn btn-primary">保存</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 文件下载 -->
+            <div class="modal fade" id="filelist" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="">文件列表</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home">
+                                            <div style="width: 600px;">
+                                                <h6 style="margin-top:16px;;margin-left: 10px; float: left;margin-bottom: 0;">模块名称：</h6>
+                                                <input type="text" class="form-control" id="exampleInputName2"
+                                                    placeholder="Modular name" style="width:300px;">
+                                            </div>
+
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane active" id="home" style="min-height:6.25rem;">
+                                            <h6 style="margin-top:10px;margin-left: 10px; ">上传文件：</h6>
+                                            <div style="width: 100%;">
+                                                <div class="container kv-main" style="width: 850px;">
+                                                    <br>
+                                                    <form enctype="multipart/form-data">
+
+                                                        <div class="form-group">
+                                                            <input id="file-2" type="file" multiple class="file"
+                                                                data-overwrite-initial="false" data-min-file-count="2">
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                            <!-- <button type="button" class="btn btn-primary">保存</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 单篇文章 -->
+            <div class="modal fade" id="singletxt" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="">单篇文章</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home">
+                                            <div style="width: 600px;">
+                                                <h6 style="margin-top:16px;;margin-left: 10px; float: left;margin-bottom: 0;">模块名称：</h6>
+                                                <input type="text" class="form-control" id="exampleInputName2"
+                                                    placeholder="Modular name" style="width:300px;">
+                                            </div>
+                                            <div style="width: 600px;">
+                                                    <h6 style="margin-top:16px;;margin-left: 10px; float: left;margin-bottom: 0;">文章标题：</h6>
+                                                    <input type="text" class="form-control" id="exampleInputName2"
+                                                        placeholder="title" style="width:300px;">
+                                                </div>
+
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane active" id="home" style="min-height:6.25rem;">
+                                            <h6 style="margin-top:10px;margin-left: 10px; ">编辑内容：</h6>
+                                            <div style="width: 100%;">
+                                                <div id="editor">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
                             <!-- <button type="button" class="btn btn-primary">保存</button> -->
                         </div>
                     </div>
@@ -1143,82 +1353,168 @@
                 <a class="go-top">
                 </a>
             </div>
+        </div>
+    </div><!-- /.site-wrapper -->
+    <!-- Javascript -->
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <!-- <script src="javascript/jquery.dad.js"></script> -->
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.sticky.js"></script>
+    <script type="text/javascript" src="javascript/jquery.easing.js"></script>
+    <script type="text/javascript" src="javascript/parallax.js"></script>
+    <script type="text/javascript" src="javascript/imagesloaded.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+    <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="javascript/slider.js"></script>
+    <script type="text/javascript" src="myjs/updateimg.js"></script>
+    <script type="text/javascript" src="myjs/panpan.js"></script>
+    <script type="text/javascript" src="myjs/image-picker.min.js"></script>
+    <script type="text/javascript" src="myjs/fileinput.min.js"></script>
+    <script type="text/javascript" src="myjs/wangEditor.min.js"></script>
 
-        </div><!-- /.site-wrapper -->
-        <!-- Javascript -->
-        <script type="text/javascript" src="javascript/jquery.min.js"></script>
-        <!-- <script src="javascript/jquery.dad.js"></script> -->
-        <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-        <script type="text/javascript" src="javascript/owl.carousel.js"></script>
-        <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
-        <script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>
-        <script type="text/javascript" src="javascript/jquery.sticky.js"></script>
-        <script type="text/javascript" src="javascript/jquery.easing.js"></script>
-        <script type="text/javascript" src="javascript/parallax.js"></script>
-        <script type="text/javascript" src="javascript/imagesloaded.min.js"></script>
-        <script type="text/javascript" src="javascript/jquery.isotope.min.js"></script>
-        <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
-        <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
-        <script type="text/javascript" src="javascript/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
 
-        <!-- Revolution Slider -->
-        <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
-        <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
-        <script type="text/javascript" src="javascript/slider.js"></script>
-
-
-
-        <script type="text/javascript">
-            $(function () {
-
-                //dad simple demo
-                $('.dad').dad();
-
-                //dad dropzone
-                var d = $('.dad2').dad();
-                d.addDropzone('.dropzone', function (e) {
-                    e.remove();
-                });
-
-                //dad activate and deactivate
-                $('.act').on('click', function () {
-                    $('.btndemo').not(this).removeClass('active');
-                    $(this).addClass('active');
-                    d.css('opacity', 1);
-                    d.activate();
-                });
-
-                $('.deact').on('click', function () {
-                    $('.btndemo').not(this).removeClass('active');
-                    $(this).addClass('active');
-                    d.css('opacity', 0.5);
-                    d.deactivate();
-                });
-
-                $('.dad-draggable').dad({
-                    draggable: '.draggable'
-                });
-
+            $("select.image-picker").imagepicker({
+                hide_select: false
             });
 
-            $('#exampleModal').on('show.bs.modal', function (event) {
-                var button = $(event.relatedTarget) // Button that triggered the modal
-                var recipient = button.data('whatever') // Extract info from data-* attributes
-                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-                var modal = $(this)
-                modal.find('.modal-title').text('New message to ' + recipient)
-                modal.find('.modal-body input').val(recipient)
-            })
-        </script>
-        <!-- 返回顶部 -->
-        <script type="text/javascript">
-            $('#toTop').click(function () {
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 1000);
-
+            $("select.image-picker.show-labels").imagepicker({
+                hide_select: false,
+                show_label: true
             });
+
+            $("select.image-picker.limit_callback").imagepicker({
+                limit_reached: function () {
+                    alert('We are full!')
+                },
+                hide_select: false
+            });
+
+            //瀑布流布局
+            var container = $("select.image-picker.masonry").next("ul.thumbnails");
+
+            container.imagesLoaded(function () {
+                container.masonry({
+                    itemSelector: "li"
+                });
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+
+            //dad simple demo
+            $('.dad').dad();
+
+            //dad dropzone
+            var d = $('.dad2').dad();
+            d.addDropzone('.dropzone', function (e) {
+                e.remove();
+            });
+
+            //dad activate and deactivate
+            $('.act').on('click', function () {
+                $('.btndemo').not(this).removeClass('active');
+                $(this).addClass('active');
+                d.css('opacity', 1);
+                d.activate();
+            });
+
+            $('.deact').on('click', function () {
+                $('.btndemo').not(this).removeClass('active');
+                $(this).addClass('active');
+                d.css('opacity', 0.5);
+                d.deactivate();
+            });
+
+            $('.dad-draggable').dad({
+                draggable: '.draggable'
+            });
+
+
+
+            $("select.image-picker").imagepicker({
+                hide_select: false
+            });
+
+            $("select.image-picker.show-labels").imagepicker({
+                hide_select: false,
+                show_label: true
+            });
+
+            $("select.image-picker.limit_callback").imagepicker({
+                limit_reached: function () {
+                    alert('We are full!')
+                },
+                hide_select: false
+            });
+
+            //瀑布流布局
+            var container = $("select.image-picker.masonry").next("ul.thumbnails");
+
+            container.imagesLoaded(function () {
+                container.masonry({
+                    itemSelector: "li"
+                });
+            });
+
+        });
+
+        $('#exampleModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('.modal-title').text('New message to ' + recipient)
+            modal.find('.modal-body input').val(recipient)
+        })
+    </script>
+    <!-- 返回顶部 -->
+    <script type="text/javascript">
+        $('#toTop').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1000);
+
+        });
+
+
+        $("#file-1").fileinput({
+            uploadUrl: '#', // you must set a valid URL here else you will get an error
+            allowedFileExtensions: ['txt', 'doc', 'docx'],
+            overwriteInitial: false,
+            maxFileSize: 1000,
+            maxFilesNum: 10,
+            slugCallback: function (filename) {
+                return filename.replace('(', '_').replace(']', '_');
+            }
+        });
+
+        $("#file-2").fileinput({
+            uploadUrl: '#', // you must set a valid URL here else you will get an error
+            overwriteInitial: false,
+            maxFileSize: 1000,
+            maxFilesNum: 10,
+            slugCallback: function (filename) {
+                return filename.replace('(', '_').replace(']', '_');
+            }
+        });
+    </script>
+        <script type="text/javascript">
+            var E = window.wangEditor
+            var editor = new E('#editor')
+            // 或者 var editor = new E( document.getElementById('editor') )
+            editor.create()
         </script>
 </body>
 
