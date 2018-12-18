@@ -27,21 +27,21 @@
 }
 
 .mylist {
-  white-space: nowrap; 
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .margin-top-39 {
   margin-top: 2.4375rem;
 }
 
-.margin-top-50{
-  margin-top: 3.125rem;
+.margin-top-25 {
+  margin-top: 1.5625rem;
 }
 
 
-.margin-right-40{
+.margin-right-40 {
   margin-right: 2.5rem;
 }
 
@@ -56,10 +56,11 @@
 .font-size-20 {
   font-size: 1.25rem
 }
+
 .avatar {
   height: 5.625rem;
   width: 5.625rem;
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 .owner {
@@ -78,7 +79,7 @@
 .numa {
   font-size: 1.25rem;
   font-weight: 500;
-  
+
 }
 
 .center {
@@ -94,4 +95,65 @@
 
 .maxwidth {
   width: 100%;
+}
+
+.mod-btn {
+  position: fixed;
+  left: 3%;
+  top: 40%;
+  z-index: 1000;
+  border-radius: 30%;
+  height: 4rem;
+  width: 4rem;
+  outline: 0ch;
+}
+
+.mod-btn2 {
+  position: fixed;
+  left: 3%;
+  top: 50%;
+  z-index: 1000;
+  border-radius: 30%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.mod-btn3 {
+  position: fixed;
+  left: 3%;
+  top: 60%;
+  z-index: 1000;
+  border-radius: 30%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.modbtn {
+  width: 9.375rem;
+  height: 3.125rem;
+  text-align: center;
+  margin-left: 5.625rem;
+  float: left;
+  border-radius: 5%;
+  /* border:0.0625rem solid #286090; */
+  background-color: #286090;
+  font-size: 1.125rem;
+  color: white;
+}
+
+.boder-bottom {
+  border-block-end: 0.0625rem solid #ccc;
+}
+
+.modbox {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.modpic {
+  font-size: 50px;
 }
