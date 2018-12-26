@@ -27,10 +27,7 @@ $(function () {
     $('.dad').dad();
 
     //dad dropzone
-    var d = $('.dad2').dad();
-    d.addDropzone('.dropzone', function (e) {
-        e.remove();
-    });
+
 
     //dad activate and deactivate
     $('.act').on('click', function () {
@@ -40,16 +37,14 @@ $(function () {
         d.activate();
     });
 
-    $('.deact').on('click', function () {
-        $('.btndemo').not(this).removeClass('active');
-        $(this).addClass('active');
-        d.css('opacity', 0.5);
-        d.deactivate();
-    });
+    // $('.deact').on('click', function () {
+    //     $('.btndemo').not(this).removeClass('active');
+    //     $(this).addClass('active');
+    //     d.css('opacity', 0.5);
+    //     d.deactivate();
+    // });
 
-    $('.dad-draggable').dad({
-        draggable: '.draggable'
-    });
+ 
 
 
 
