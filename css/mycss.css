@@ -109,7 +109,7 @@
 .mod-btn {
   position: fixed;
   left: 3%;
-  top: 40%;
+  top: 30%;
   z-index: 1000;
   border-radius: 30%;
   height: 4rem;
@@ -120,7 +120,7 @@
 .mod-btn2 {
   position: fixed;
   left: 3%;
-  top: 50%;
+  top: 40%;
   z-index: 1000;
   border-radius: 30%;
   height: 4rem;
@@ -130,7 +130,7 @@
 .mod-btn3 {
   position: fixed;
   left: 3%;
-  top: 60%;
+  top: 50%;
   z-index: 1000;
   border-radius: 30%;
   height: 4rem;
@@ -140,7 +140,7 @@
 .mod-btn4 {
   position: fixed;
   left: 3%;
-  top: 70%;
+  top: 60%;
   z-index: 1000;
   border-radius: 30%;
   height: 4rem;
@@ -150,7 +150,7 @@
 .mod-btn5 {
   position: fixed;
   left: 3%;
-  top: 80%;
+  top: 70%;
   z-index: 1000;
   border-radius: 30%;
   height: 4rem;
