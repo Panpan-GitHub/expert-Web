@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
-<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh">
+<!--<![endif]-->
+
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title></title>
+    <title>通用工作室</title>
 
     <meta name="author" content="themesflat.com">
 
@@ -13,8 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Bootstrap  -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
- 
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
@@ -23,7 +24,7 @@
 
     <!-- Colors -->
     <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
-    
+
     <!-- Favicon and touch icons  -->
     <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
@@ -32,740 +33,650 @@
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
-</head>                                 
-<body class="header-sticky">
-    <section class="loading-overlay">
-        <div class="Loading-Page">
-            <h2 class="loader">Loading...</h2>
-        </div>
-    </section>  
-    <div id="site-wrapper">
+    <link rel="stylesheet" type="text/css" href="css/mycss.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dad.css">
+    <link rel="stylesheet" type="text/css" href="css/fileinput.min.css">
+</head>
 
-        <!-- Site-header -->
-        <div id="site-header">
-            <div id="headerbar">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="custom-info">
-                                <i class="fa fa-clock-o">
-                                </i>We'are Open: Monday - Saturday, 8:00 Am - 18:00 Pm
-                            </div><!-- /.custom-info -->
+<body class="header-sticky" style="padding-right: 0">
+        <section class="loading-overlay">
+            <div class="Loading-Page">
+                <h2 class="loader">Loading...</h2>
+            </div>
+        </section>
 
-                            <div class="social-links">
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-behance"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-spotify"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-rss"></i>
-                                </a>
-                            </div><!-- /.social-links -->
+        <div id="site-wrapper">
 
-                            <nav id="site-navigator" class="top-navigator">
-                                <ul id="menu-top-menu" class="menu">
-                                    <li class="menu-item-has-children"><a href="#">Extra Pages</a>
-                                        <ul class="sub-menu">
-                                            <li ><a href="#">Maintenance Mode</a></li>
-                                            <li ><a href="#">Coming Soon</a></li>
-                                            <li><a href="#">404 Page</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Elements</a></li>
-                                    <li><a href="#">My Account</a></li>
-                                    <li><a href="#">Checkout</a></li>
-                                </ul>
-                            </nav>
-                            <!-- /.top-navigator -->
-                        </div>
-                    </div>
-                </div><!-- /.container -->
-            </div><!-- /.headerbar -->
-
-            <!-- Header -->            
-            <header id="header" class="header clearfix">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="header-wrap clearfix">
-                                <div id="logo" class="logo">
+            <!-- Site-header -->
+            <div id="site-header">
+                <!-- Header -->
+                <header id="header" class="header clearfix" style="display:block">
+                    <!-- <span class="edit glyphicon glyphicon-pencil display" style="top:1.5rem;right:2rem;">编辑</span> -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="header-wrap clearfix">
+                                    <div id="logo" class="logo">
                                         <div id="logo" class="logo maobi font-size-25">
-                                                跤鎏通用工作室
-                                            </div><!-- /.logo -->
-                                </div><!-- /.logo -->
-                                <div class="nav-wrap">
-                                    <div class="btn-menu"></div><!-- //mobile menu button -->
-                                    <nav id="mainnav" class="mainnav">
-                                             <ul class="menu">
-                                            <li><a href="index.html">首页</a></li>
-                                            <li><a href="#">教师文章</a></li>
-                                            <li><a href="#">教学资源</a></li>
+                                            跤鎏通用工作室
+                                        </div><!-- /.logo -->
+                                    </div><!-- /.logo -->
+                                    <div class="nav-wrap">
+                                        <div class="btn-menu"></div><!-- //mobile menu button -->
+                                        <nav id="mainnav" class="mainnav">
+                                            <ul class="menu">
+                                                <li><a href="index.html">首页</a></li>
+                                                <li><a href="#">教师文章</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">讲义</a></li>
+                                                        <li><a href="#">上课笔记</a></li>
+                                                    </ul><!-- /.submenu -->
+                                                </li>
+                                                <li><a href="#">教学资源</a>
 
-                                            <li><a href="#">名师课堂</a>
-                                                <ul class="submenu">
-                                                    <li><a href="#">公开课</a></li>
-                                                    <li><a href="#">培训讲座</a></li>
-                                                    <li><a href="#">微课</a></li>
-                                                </ul><!-- /.submenu -->
-                                            </li>
-                                            <li><a href="#">教研活动</a></li>
-                                            <li><a href="#">走进工作室 </a></li>
-                                        </ul><!-- /.menu -->
-                                    </nav><!-- /.mainnav -->
-                                    <ul class="menu-extra">
-                                        <li class="shopping-cart">
-                                            <a href="#">
-                                                <i class="fa fa-shopping-cart"></i>
-                                                <span class="shopping-cart-items-count">2</span>
-                                            </a>
-                                            <div class="submenu">
-                                                <div class="widget_shopping_cart_content">
-                                                    <ul class="cart_list product_list_widget ">
-                                                        <li>
-                                                            <a href="#" class="box-img">
-                                                                <img src="images/shop/1-180x180.jpg" alt="images">
-                                                            </a>
-                                                            <div class="content-box">
-                                                                <a href="#">Aztec Print Socks
-                                                                </a>
-                                                                <span class="quantity">
-                                                                    2 × £20.00
-                                                                </span>
-                                                            </div>
-                                                            <a href="#" class="delete-product">
-                                                                x
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="box-img">
-                                                                <img src="images/shop/2-180x180.jpg" alt="images">
-                                                            </a>
-                                                            <div class="content-box">
-                                                                <a href="#">Embroidered Belt 
-                                                                </a>
-                                                                <span class="quantity">
-                                                                    2 × £35.00
-                                                                </span>
-                                                            </div>
-                                                            <a href="#" class="delete-product">
-                                                                x
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <p class="total">
-                                                        <strong>Subtotal:</strong> 
-                                                        <span class="amount">£110.00</span>
-                                                    </p>
-                                                    <div class="wrap-buttons">
-                                                        <a class="button b1">View cart</a>
-                                                        <a class="button b2">Checkout</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">PPT下载</a></li>
+                                                    </ul><!-- /.submenu -->
+                                                </li>
+                                                <li><a href="#">名师课堂</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">公开课</a></li>
+                                                        <li><a href="#">培训讲座</a></li>
+                                                        <li><a href="#">微课</a></li>
+                                                    </ul><!-- /.submenu -->
+                                                </li>
+                                                <li><a href="#">教研活动</a></li>
+                                                <li><a href="#">走进工作室 </a></li>
+                                            </ul><!-- /.menu -->
+                                        </nav><!-- /.mainnav -->
+                                        <ul class="menu-extra">
+                                            <li id="s" class="search-box">
+                                                <a href="#search" class="flat-search"><i class="fa fa-search"></i></a>
+                                                <div class="submenu top-search">
+                                                    <div class="widget widget_search">
+                                                        <form class="search-form">
+                                                            <input type="search" class="search-field" placeholder="Search …">
+                                                            <input type="submit" class="search-submit">
+                                                        </form>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li id ="s" class="search-box">
-                                            <a href="#search" class="flat-search"><i class="fa fa-search"></i></a>
-                                            <div class="submenu top-search">
-                                                <div class="widget widget_search">
-                                                    <form class="search-form">
-                                                        <input type="search" class="search-field" placeholder="Search …">
-                                                        <input type="submit" class="search-submit">
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </li><!-- /.search-box -->
-                                    </ul> <!-- /.menu-extra -->  
-                                </div><!-- /.nav-wrap -->
-                                
-                            </div><!-- /.header-wrap -->
-                        </div>
-                    </div> <!-- /.row -->
-                </div> <!--  /.container -->
-            </header><!-- /.header -->
+                                            </li><!-- /.search-box -->
+                                        </ul> <!-- /.menu-extra -->
+                                    </div><!-- /.nav-wrap -->
 
-            <!-- Page title -->
-            <div class="flat-row page-title  parallax parallax1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">                    
-                            <div class="page-title-heading">
-                                <h1 class="title">PROJECT</h1>
-                                <p class="subtitle"></p>
-                            </div><!-- /.page-title-captions --> 
-                            <div class="breadcrumbs">
-                                <p>You are here:</p>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">GALLERY</a></li>
-                                    <li class="active">PROJECT</li>
-                                </ul>                   
-                            </div><!-- /.breadcrumbs --> 
-                        </div><!-- /.col-md-12 -->  
-                    </div><!-- /.row -->  
-                </div><!-- /.container -->                      
-            </div><!-- /.page-title --> 
-        </div><!--  /.site-header -->
-        
-        <div id="site-content">
-            <!-- Gallery -->
-            <section class="gallery">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="flat-project flat-animation" data-animation="flipInY" data-animation-delay="0" data-animation-offset="75%">
-                                <div class="controlnav-folio">
-                                    <ul class="project-filter">
-                                        <li class="active"><a data-filter="*" href="#">All</a></li>
-                                        <li><a data-filter=".carwash" href="#">Car Wash</a></li>
-                                        <li><a data-filter=".carglassing" href="#">Car Glassing</a></li>
-                                        <li><a data-filter=".carpolishing" href="#">Car Polishing</a></li>
-                                    </ul><!-- /.project-filter -->
-                                </div>
-                                <div class="project-wrap four-columns ">
-                                    <div class="object project-item entry carwash">
-                                        <div class="item-wrap ">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/1.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">Red Car</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Wash</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
+                                </div><!-- /.header-wrap -->
+                            </div>
+                        </div> <!-- /.row -->
+                    </div> <!--  /.container -->
+                </header><!-- /.header -->
 
-                                    <div class="object project-item  entry carglassing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/2.jpg" alt="image">
-                                                </a>
+                <!-- Slider -->
+                <div class="tp-banner-container">
+                        <div class="flat-row page-title  parallax parallax1">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">                    
+                                            <div class="page-title-heading">
+                                                <h1 class="title">My images</h1>
+                                                <p class="subtitle"></p>
+                                            </div><!-- /.page-title-captions --> 
+                                            <div class="breadcrumbs">
+                                                <p>You are here:</p>
+                                                <ul>
+                                                    <li><a href="#">Home</a></li>
+                                                    <li class="active">GALLERY</li>
+                                                </ul>                   
+                                            </div><!-- /.breadcrumbs --> 
+                                        </div><!-- /.col-md-12 -->  
+                                    </div><!-- /.row -->  
+                                </div><!-- /.container -->                      
+                            </div><!-- /.page-title --> 
+                </div>
+            </div><!--  /.site-header -->
+            <div id="site-content">
+                    <section class="gallery" style="display:block">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="flat-project flat-animation" data-animation="flipInY" data-animation-delay="0" data-animation-offset="75%">
+                                            <div class="controlnav-folio">
+                                                <ul class="project-filter">
+                                                    <li class="active"><a data-filter="*" href="#">All</a></li>
+                                                    <li><a data-filter=".carwash" href="#">Car Wash</a></li>
+                                                    <li><a data-filter=".carglassing" href="#">Car Glassing</a></li>
+                                                    <li><a data-filter=".carpolishing" href="#">Car Polishing</a></li>
+                                                </ul><!-- /.project-filter -->
                                             </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">Green Car</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item entry  carpolishing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/3.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">Fire Car</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carglassing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/4.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">Cars 2017</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carwash">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/5.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">Hot Rod</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Wash</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carpolishing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/6.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">VOLTSWAGON</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-                                    <div class="object project-item  entry  carglassing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/7.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">CARS 2017</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-                                    <div class="object project-item  entry  carwash">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/8.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">CAR SHOW</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Wash</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carglassing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/9.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">BRIDGE</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carwash">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/10.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">BENTLEY</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Wash</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carglassing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/11.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">DUESEBERG</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carglassing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/12.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">CITROEN</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carwash">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/13.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">PORSCHE</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Wash</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carglassing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/14.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">RADIATOR</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carglassing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/15.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">Red Car</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carglassing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/16.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">ROLLS ROYCE</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carwash">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/17.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">GREEN CAR</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Wash</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carwash">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/18.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">BOBBY CAR</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Wash</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carglassing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/19.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">BLUR CAR</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carpolishing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/20.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">RACE CAR</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carwash">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/21.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">RACING CAR</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Wash</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carwash">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/22.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">WHITE BEETLE</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Wash</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                    <div class="object project-item  entry  carpolishing">
-                                        <div class="item-wrap">
-                                            <div class="project-thumb">
-                                                <a href="gallery-grid.html">
-                                                    <img src="images/gallery/23.jpg" alt="image">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-title">
-                                                    <a href="gallery-detail.html">VW BEETLE</a>
-                                                </h3>
-                                                <ul class="project-categories">
-                                                    <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
-                                                </ul>
-                                            </div>
-                                        </div><!-- /.item-wrap -->
-                                    </div><!-- /.project-item -->
-
-                                </div><!-- /.project-wrap -->
-                            </div><!-- /.flat-project -->
-                        </div> <!-- /.col-md-12 -->
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </section>
-
-            <div class="flat-divider d50px"></div>
-        </div><!--/.site-content -->
-
+                                            <div class="project-wrap four-columns ">
+                                                <div class="object project-item entry carwash">
+                                                    <div class="item-wrap ">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/1.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">Red Car</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Wash</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry carglassing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/2.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">Green Car</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item entry  carpolishing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/3.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">Fire Car</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carglassing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/4.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">Cars 2017</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carwash">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/5.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">Hot Rod</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Wash</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carpolishing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/6.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">VOLTSWAGON</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+                                                <div class="object project-item  entry  carglassing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/7.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">CARS 2017</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+                                                <div class="object project-item  entry  carwash">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/8.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">CAR SHOW</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Wash</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carglassing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/9.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">BRIDGE</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carwash">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/10.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">BENTLEY</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Wash</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carglassing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/11.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">DUESEBERG</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carglassing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/12.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">CITROEN</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carwash">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/13.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">PORSCHE</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Wash</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carglassing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/14.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">RADIATOR</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carglassing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/15.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">Red Car</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carglassing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/16.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">ROLLS ROYCE</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Glassing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carwash">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/17.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">GREEN CAR</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Wash</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carwash">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/18.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">BOBBY CAR</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Wash</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carglassing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/19.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">BLUR CAR</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carpolishing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/20.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">RACE CAR</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carwash">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/21.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">RACING CAR</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Wash</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carwash">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/22.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">WHITE BEETLE</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Wash</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                                <div class="object project-item  entry  carpolishing">
+                                                    <div class="item-wrap">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="images/gallery/23.jpg" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html">VW BEETLE</a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html">Car Polishing</a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->
+            
+                                            </div><!-- /.project-wrap -->
+                                        </div><!-- /.flat-project -->
+                                    </div> <!-- /.col-md-12 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.container -->
+                        </section>
+            
+                        <div class="flat-divider d50px"></div>
+        </div>
         <div class="site-footer">
-            <div class="footer-widgets">
-                <div class="container">
-                    <div class="row">                            
-                        <div id="text01" class="widget widget_text ">
-                            <div class="textwidget">
-                                <div class="footer-info">
-                                    <p>
-                                        <img  alt="AnyCar" src="images/logo1.png">
-                                    </p>
-                                    <p>We offer a commitment to personalized service for our clients. If you have further questions or need help with a case, please complete our quick form below. A team<br>member will return your message as soon as possible.</p>
-                                    <div class="two-columns row">
-                                        <div class="object">
-                                            <i class="fa fa-map-marker"></i>
-                                            <strong>66 Nicholson St Buffalo New York US</strong> <br>
-                                            <i class="fa fa-phone"></i>
-                                            <strong>Tel:</strong> 0123 456 789
-                                        </div>
-                                        <div class="object ft-phone">
-                                            <i class="fa fa-tablet"></i>
-                                            <strong>Mobile: </strong>01-888-666-999<br>
-                                            <i class="fa fa-envelope"></i>
-                                            <strong>E-mail:</strong>
-                                            <a href="#">support@linethemes.com</a>
-                                        </div>
-                                    </div><!-- /.row -->
-                                    <a href="#" class="button">
-                                        <i class="fa fa-download"></i>Purchase Theme Now</a>
+                <div class="footer-widgets">
+                    <div class="container">
+                        <div class="row">
+                            <div id="text01" class="widget widget_text ">
+                                <div class="textwidget">
+                                    <div class="footer-info">
+                                        <p>
+                                            <!-- <img alt="AnyCar" src="images/logo1.png"> -->
+                                        </p>
+                                        <p>我们提供通用的工作室自主搭建方案</p>
+                                        <div class="two-columns row">
+                                            <div class="object">
+                                                <i class="fa fa-map-marker"></i>
+                                                <strong>浙江科技学院西和公寓</strong> <br>
+                                                <i class="fa fa-phone"></i>
+                                                <strong>Tel:</strong> 0123 456 789
+                                            </div>
+                                            <div class="object ft-phone">
+                                                <i class="fa fa-tablet"></i>
+                                                <strong>Mobile: </strong>01-888-666-999<br>
+                                                <i class="fa fa-envelope"></i>
+                                                <strong>E-mail:</strong>
+                                                <a href="#">jiaoliu@qq.com</a>
+                                            </div>
+                                        </div><!-- /.row -->
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="widget widget_nav_menu">
-                            <h3 class="widget-title">Sample Pages</h3>
-                            <div class="menu-sample-pages-container">
-                                <ul  class="menu">
-                                    <li ><a href="#">About Us</a></li>
-                                    <li ><a href="#">Services</a></li>
-                                    <li ><a href="#">Our Team</a></li>
-                                    <li ><a href="#">Contact Us</a></li>
-                                    <li ><a href="#">Elements</a></li>
-                                </ul>
+                            <div class="widget widget_nav_menu">
+                                <!-- <h3 class="widget-title">imformation</h3> -->
+                                <div class="menu-sample-pages-container">
+                                    <ul class="menu">
+                                        <!-- <li><a href="#">关于我们</a></li>
+                                    <li><a href="#">服务</a></li>
+                                    <li><a href="#">我们的团队</a></li>
+                                    <li><a href="#">联系我们</a></li> -->
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                   
-                        <div class="widget widget_nav_menu">
-                            <h3 class="widget-title">SPECIAL PAGES</h3>
-                            <div class="menu-sample-pages-container">
-                                <ul  class="menu">
-                                    <li ><a href="#">Blank Page</a></li>
-                                    <li ><a href="#">Maintenance Mode</a></li>
-                                    <li ><a href="#">Coming Soon</a></li>
-                                    <li ><a href="#">404 Page</a></li>
-                                    <li ><a href="#">Right Sidebar</a></li>
-                                    <li ><a href="#">Left Sidebar</a></li>
-                                </ul>
+
+                            <div class="widget widget_nav_menu">
+                                <h3 class="widget-title">Page</h3>
+                                <div class="menu-sample-pages-container">
+                                    <ul class="menu">
+                                        <li><a href="#">主页</a></li>
+                                        <li><a href="#">404 Page</a></li>
+                                        <li><a href="#">500 Page</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    
-                        <div class="widget widget_nav_menu">
-                            <h3 class="widget-title">SERVICES</h3>
-                            <div class="menu-sample-pages-container">
-                                <ul  class="menu">
-                                    <li ><a href="#">All Services</a></li>
-                                    <li ><a href="#">Vehicle Inspection</a></li>
-                                    <li ><a href="#">Diagnostic Services</a></li>
-                                    <li ><a href="#">Performance</a></li>
-                                    <li ><a href="#">Pricing</a></li>
-                                </ul>
+
+                            <div class="widget widget_nav_menu">
+                                <h3 class="widget-title">imformation</h3>
+                                <div class="menu-sample-pages-container">
+                                    <ul class="menu">
+                                        <li><a href="#">关于我们</a></li>
+                                        <li><a href="#">服务</a></li>
+                                        <li><a href="#">我们的团队</a></li>
+                                        <li><a href="#">联系我们</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>                        
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </div><!-- /.footer-widgets -->
-            <div class="footer-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="copyright">
-                                <div class="social-links">
-                                    <a href="http://sc.chinaz.com/jiaoben/">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                    <a href="http://sc.chinaz.com/jiaoben/">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fa fa-behance"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fa fa-spotify"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fa fa-rss"></i>
-                                    </a>
-                                </div><!-- /.social-links -->
-                                <div class="copyright-content">
-                                    Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
-                                </div><!-- /.copyright-content -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </div><!-- /.footer-widgets -->
+                <div class="footer-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <div class="social-links">
+                                        <a href="http://sc.chinaz.com/jiaoben/">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="http://sc.chinaz.com/jiaoben/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-behance"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-spotify"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-rss"></i>
+                                        </a>
+                                    </div><!-- /.social-links -->
+                                    <div class="copyright-content">
+                                        Copyright &copy; 2018.浙江科技学院.<a href="#"></a>
+                                    </div><!-- /.copyright-content -->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Go Top -->
+                <a class="go-top">
+                </a>
             </div>
-            <!-- Go Top -->
-            <a class="go-top">
-            </a> 
-        </div>
-        
-    </div>  <!-- /.site-wrapper -->
-   
     <!-- Javascript -->
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script src="javascript/jquery.dad.js"></script>
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.sticky.js"></script>
     <script type="text/javascript" src="javascript/jquery.easing.js"></script>
     <script type="text/javascript" src="javascript/parallax.js"></script>
@@ -774,6 +685,62 @@
     <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
     <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
+    <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="javascript/slider.js"></script>
+    <script type="text/javascript" src="myjs/updateimg.js"></script>
+    <script type="text/javascript" src="myjs/image-picker.min.js"></script>
+    <script type="text/javascript" src="myjs/fileinput.min.js"></script>
+    <script type="text/javascript" src="myjs/wangEditor.min.js"></script>
+    <script type="text/javascript" src="myjs/zujian.js"></script>
+    <script type="text/javascript" src="myjs/panpan.js"></script>
+    <script>
+function getpic() {
+        $("#mypic").html("");
+
+        $.ajax({
+            url:  'http://172.17.164.24:8080/photo/getAll',
+            type: 'POST',
+            data: {
+                userId: 1
+            },
+            dataType: "JSON",
+            success: function (data) {
+                $.each(eval(data).obj, function (i, item) {
+                    $("#mypic").append(
+                        `                             <div class="object project-item entry carwash">
+                                                    <div class="item-wrap ">
+                                                        <div class="project-thumb">
+                                                            <a href="gallery-grid.html">
+                                                                <img src="http://172.17.164.24:8080`+ item.photoPath +`" alt="image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="project-info">
+                                                            <h3 class="project-title">
+                                                                <a href="gallery-detail.html"></a>
+                                                            </h3>
+                                                            <ul class="project-categories">
+                                                                <li><a href="gallery-detail.html"></a></li>                                 
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- /.item-wrap -->
+                                                </div><!-- /.project-item -->`);
+      
+                })
+                $("select.image-picker").imagepicker({
+                    hide_select: false
+                });
+            },
+            error: function (e) {
+                console.log(e)
+
+            }
+        });
+
+    };
+    getpic();
+    </script>
 
 </body>
+
 </html>

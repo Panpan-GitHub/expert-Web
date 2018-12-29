@@ -1,5 +1,5 @@
 var id = 1;
-var ip = "http://192.168.43.76:8080/";
+var ip = "http://172.17.164.24:8080";
 /*
 判断登录用户
 */
@@ -54,6 +54,27 @@ $("#drag").click(function () {;
     }
 })
 
+//生成访客页面
+$("#crtIndex").click(function () {
+    let crt = $("#customer").html();
+
+    $.ajax({
+        url: ip + '/user/saveBody',
+        type: 'POST',
+        data:{
+            body:crt
+        },
+        success: function (data) {
+            $('.bs-success-modal-sm').modal('show')
+        },
+        error: function (e) {
+           $(".bs-error-modal-sm").modal('show')
+        }
+    })
+})
+
+
+
 
 /*
 添加模块
@@ -78,7 +99,7 @@ const imgmanage = {
         $("#mypic").html("");
 
         $.ajax({
-            url: ip + 'photo/getAll',
+            url: ip + '/photo/getAll',
             type: 'POST',
             data: {
                 userId: id
@@ -109,7 +130,7 @@ const imgmanage = {
         // photo.append("userId", 1);
         // photo.append("photoPath", 1);
         $.ajax({
-            url: ip + 'photo/add',
+            url: ip + '/photo/add',
             type: 'POST',
             data: formdata,
             processData: false,
@@ -126,7 +147,6 @@ const imgmanage = {
 $("#useimg").click(function () {
     imgList.getId();
     imgList.add();
-    imgList.addTxt();
 });
 
 const imgList = {
@@ -136,9 +156,10 @@ const imgList = {
     //获取id
     "getId": function () {
         this.title = $("#imglist-name").val();
-        console.log(this.title)
+        console.log(this.title);
+        sessionStorage.mutititle = this.title;
         $.ajax({
-            url: ip + 'module/add',
+            url: ip + '/module/add',
             type: 'POST',
             data: {
                 userId: id,
@@ -146,7 +167,8 @@ const imgList = {
                 type: "列表多图"
             },
             success: function (data) {
-                this.modId = eval(data).obj.id;
+               sessionStorage.mutimodId = eval(data).obj.id;
+               console.log(eval(data).obj.id)
             }
         })
     },
@@ -155,7 +177,7 @@ const imgList = {
         let txtOne = ` <div class="col-md-12">
         <div class="col-md-6 col-md-offset-3">
             <div class="title-section">
-                <h2 class="title"><span class="typo">&amp;</span>` + this.title + `</h2>
+                <h2 class="title"><span class="typo">&amp;</span>` + sessionStorage.mutititle + `</h2>
             </div>
         </div>
         <div class="col-md-12">
@@ -174,19 +196,19 @@ const imgList = {
         // console.log(img)
         for (let i = 0; i < img.length; i++) {
             arr.push({
-                "moduleId": this.modId,
+                "moduleId": sessionStorage.mutimodId,
                 "photoPath": img[i],
                 "description": "Default introduction",
                 "linkPath": "#"
             })
         }
-        // console.log(arr)
+        console.log(arr)
         $.ajax({
+            url: ip + '/multiPhoto/save?moduleId=' + sessionStorage.mutimodId,
             type: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            url: ip + 'multiPhoto/save?moduleId=6',
             data: JSON.stringify(arr),
             dataType: 'json',
             success: function (data) {
@@ -195,7 +217,7 @@ const imgList = {
                         <article class="entry object" style="height:15rem;width:30%">
                             <div class="feature-post " style="height:221px;overflow:hidden">
                                 <a class="img-post" href="blog-single.html">
-                                    <img src=` + ip + `"` + item + `" alt="image">
+                                    <img src="` + ip + item + `" alt="image">
                                 </a>
                             </div><!-- /.feature-post -->
                             <div class="main-post text-center">
@@ -213,7 +235,7 @@ const imgList = {
                 
                 <div class="col-md-6 col-md-offset-3">
                     <div class="title-section draggable">
-                        <h2 class="title"><span class="typo">&amp;</span>` + imgList.title + `</h2>
+                        <h2 class="title"><span class="typo">&amp;</span>` + sessionStorage.mutititle + `</h2>
                     </div>
                 </div><!-- /.col-md-6 -->
 
@@ -244,7 +266,7 @@ const addText = {
     "add": function () {
         addText.title = $("#txtListName").val();
         $.ajax({
-            url: ip + 'module/add',
+            url: ip + '/module/add',
             type: 'POST',
             data: {
                 userId: id,
@@ -262,7 +284,7 @@ const addText = {
                           <div class="images-single-flexslider">
                               <ul class="slides">
                                   <li>
-                                      <a class="img-post popup-gallery" href="#"><img src="images/images-single/1.jpg"
+                                      <a class="img-post popup-gallery" href="#"><img src="img/1.jpg"
                                               alt="image"></a>
                                   </li>
                               </ul>
@@ -347,7 +369,7 @@ const addDownload = {
     "add": function () {
         addDownload.title = $("#downloadName").val()
         $.ajax({
-            url: ip + 'module/add',
+            url: ip + '/module/add',
             type: 'POST',
             data: {
                 userId: id,
@@ -362,31 +384,9 @@ const addDownload = {
                   <div class="col-md-12">
                       <div class="col-md-5">
                           <h4 class="widget-title draggable" style="margin-top:0">` + addDownload.title + `</h4>
-                          <div class="images-single-flexslider">
-                              <ul class="slides">
-                                  <li>
-                                      <a class="img-post popup-gallery" href="#"><img src="images/images-single/1.jpg"
-                                              alt="image"></a>
-                                  </li>
-                              </ul>
-                          </div><!-- /.images-single-flexslider -->
-                      </div><!-- /.col-md-4 -->
-
-                      <div class="col-md-7">
-                          <h4 class="widget-title float-right" style="font-size:10px;margin:0;"><a href="#">more</a></h4>
-                          <div class="flat-about-us">
-                              <h4>预设内容</h4>
-                              <p>We understand that our customers demand the highest quality repair with an
-                                  efficient
-                              </p>
-                              <p class="margin-top-25">小王
-                                  <a href="#" class="float-right"><span class="glyphicon glyphicon-download-alt"></span></a>
-                                  <span class="float-right margin-right-40">12-15</span>
-                              </p>
-                          </div><!-- /.flat-about-us -->
                       </div><!-- /.col-md-4 -->
                   </div>
-                  <div class="col-md-12 margin-top-39">
+                  <div class="col-md-12">
                       <div class="sidebar">
                           <div class="widget widget-recentpost">
                               <ul class="recentpost">
@@ -455,11 +455,11 @@ const singleTxt = {
     "time": 0,
     "getId": function () {
         singleTxt.modName = $("#singleName").val();
-        singleTxt.title = $("#singleTitle").val();
+       sessionStorage.singleTxttitle = $("#singleTitle").val();
         console.log(singleTxt.modName)
 
         $.ajax({
-            url: ip + 'module/add',
+            url: ip + '/module/add',
             type: 'POST',
             data: {
                 userId: id,
@@ -467,14 +467,9 @@ const singleTxt = {
                 type: "单篇文章"
             },
             success: function (data) {
-                $.ajax({
-                    async: false,
-                    success: function () {
-                        singleTxt.userName = eval(data).obj.userName;
-                        singleTxt.modId = eval(data).obj.id;
-                        console.log(singleTxt.modId)
-                    }
-                })
+                sessionStorage.singleTxtUserName = eval(data).obj.username;
+                // console.log(eval(data).obj)
+                sessionStorage.singleTxtModId = eval(data).obj.id;
 
             },
             error: function (e) {}
@@ -485,30 +480,14 @@ const singleTxt = {
 
     "add": function () {
         singleTxt.content = editor.txt.html();
-        let time = function getNowFormatDate() {
-            var date = new Date();
-            var seperator1 = "-";
-            var year = date.getFullYear();
-            var month = date.getMonth() + 1;
-            var strDate = date.getDate();
-            if (month >= 1 && month <= 9) {
-                month = "0" + month;
-            }
-            if (strDate >= 0 && strDate <= 9) {
-                strDate = "0" + strDate;
-            }
-            var currentdate = year + seperator1 + month + seperator1 + strDate;
-            return currentdate;
-        };
         let formData = new FormData();
         formData.append('title', $("#singleName").val());
         formData.append('description', $("#singleTitle").val())
-        formData.append('moduleId', singleTxt.modId); //
+        formData.append('moduleId',sessionStorage.singleTxtModId); 
         formData.append('content', singleTxt.content);
 
-        console.log(singleTxt.modId)
         $.ajax({
-            url: ip + 'singlepassage/update',
+            url: ip + '/singlepassage/update',
             type: 'POST',
             data: formData,
             processData: false,
@@ -518,8 +497,8 @@ const singleTxt = {
                     `<div class="col-md-6">
                     
                     <div class="flat-text-content object text-center">
-                        <h3 class="title draggable">WHY WE DO IT BETTER</h3>
-                        <div> <span style="margin-right:150px;">发布人：` + singleTxt.userName + `</span> <span>日期：` + singleTxt.time + `</span></div>
+                        <h3 class="title draggable">`+ sessionStorage.singleTxttitle +`</h3>
+                        <div> <span>发布人：` + sessionStorage.singleTxtUserName + `</span></div>
                         <div class="content">
                         ` + singleTxt.content + `
                         </div>
@@ -623,13 +602,13 @@ $(function () {
     getImgList.get();
     getDownload.get();
     getSingleTxt.get();
-    // getTxtList.get();
+    getTxtList.get();
 })
 //获得轮播图
 const getRotation = {
     "get": function () {
         $.ajax({
-            url: ip + 'module/get',
+            url: ip + '/module/get',
             type: 'POST',
             data: {
                 userId: id,
@@ -666,20 +645,21 @@ const getRotation = {
 const getImgList = {
     "get": function () {
         let txt;
-        let arr = new Array();
-        localStorage.txt3 = "";
         $.ajax({
             type: 'POST',
-            url: ip + 'module/get',
+            url: ip + '/module/get',
+            data: {
+                userId: id,
+            },
             success: function (data) {
                 $.each(eval(data), function (k, num) {
                     if (num.type == "列表多图") {
                         $.each(num.content, function (i, item) {
-                           let text = `   
+                            let text = `   
                             <article class="entry object" style="height:15rem;width:30%">
                                 <div class="feature-post ">
                                     <a class="img-post" href="blog-single.html">
-                                        <img src=` + ip + `"` + item.photoPath + `" alt="image">
+                                        <img src="` + ip + item.photoPath + `" alt="image">
                                     </a>
                                 </div><!-- /.feature-post -->
                                 <div class="main-post">
@@ -687,33 +667,38 @@ const getImgList = {
                                 </div><!-- /.main-post -->
                             </article><!-- /.entry -->
             `;
+                            let mutitxt = "";
+                            mutitxt = mutitxt.concat(text)
+                            sessionStorage.mutitxt = mutitxt;
+                            // console.log(item)
+                        });
 
-                            sessionStorage.txt2 =sessionStorage.txt2.concat(text);
-                            console.log(item)
-                        })
+                        txt = `                       <div class="col-md-12">
+                
+                        <div class="col-md-6 col-md-offset-3 draggable">
+                            <div class="title-section">
+                                <h2 class="title"><span class="typo">&amp;</span>列表多图</h2>
+                            </div>
+                        </div><!-- /.col-md-6 -->
+        
+                        <div class="col-md-12">
+                            <div class="blog-carousel-slider post-wrap">
+                                ` + sessionStorage.mutitxt + `
+                            </div><!-- /.blog-carousel-slider -->
+                        </div>
+                    </div><!-- /.col-md-12 -->`;
+
+                        sessionStorage.muti = txt;
                     }
-
+                    //组合
+                    var txt2 = sessionStorage.muti;
+                    $("#bg-contant").append(txt2);
 
                 });
-                //组合
-                txt = `                       <div class="col-md-12">
-                
-                <div class="col-md-6 col-md-offset-3 draggable">
-                    <div class="title-section">
-                        <h2 class="title"><span class="typo">&amp;</span>列表多图</h2>
-                    </div>
-                </div><!-- /.col-md-6 -->
 
-                <div class="col-md-12">
-                    <div class="blog-carousel-slider post-wrap">
-                        ` + sessionStorage.txt2 + `
-                    </div><!-- /.blog-carousel-slider -->
-                </div>
-            </div><!-- /.col-md-12 -->`;
-                $("#bg-contant").append(txt);
             },
             error: function (e) {
-console.log("error")
+                console.log("error")
             }
         });
     }
@@ -723,35 +708,7 @@ console.log("error")
 const getTxtList = {
     "get": function () {
         let txt, txt2, txt3;
-        txt = `                      <div class="col-md-6">
-        
-        <div class="col-md-12">
-            <div class="col-md-5">
-                <h4 class="widget-title draggable" style="margin-top:0">` + +` </h4>
-                <div class="images-single-flexslider">
-                    <ul class="slides">
-                        <li>
-                            <a class="img-post popup-gallery" href="#"><img src="` + ip + +`"
-                                    alt="image"></a>
-                        </li>
-                    </ul>
-                </div><!-- /.images-single-flexslider -->
-            </div><!-- /.col-md-4 -->
 
-            <div class="col-md-7">
-                <h4 class="widget-title float-right" style="font-size:10px;margin:0;"><a href="#">more</a></h4>
-                <div class="flat-about-us">
-                    <h4>` + +`</h4>
-                    <p>从学习中获得快乐
-                    </p>
-                    <p class="margin-top-25">` + +`<span class="float-right">` + +`</span></p>
-                </div><!-- /.flat-about-us -->
-            </div><!-- /.col-md-4 -->
-        </div>
-        <div class="col-md-12 margin-top-39">
-            <div class="sidebar">
-                <div class="widget widget-recentpost">
-                    <ul class="recentpost">`
 
         txt3 = `                    </ul><!-- /.recentpost -->
              </div><!-- /.widget-recentpost -->
@@ -759,26 +716,71 @@ const getTxtList = {
      </div>
  </div>`
         $.ajax({
-            url: ip + 'module/get',
+            url: ip + '/module/get',
+            data: {
+                userId: id,
+            },
             type: 'POST',
             success: function (data) {
-                    txt2 = `      <li class="maxwidth">
+                $.each(eval(data), function (k, num) {
+                    if (num.type == "文章列表") {
+                        var n = 0;
+                        txt = `                      <div class="col-md-6">
+        
+                        <div class="col-md-12">
+                            <div class="col-md-5">
+                                <h4 class="widget-title draggable" style="margin-top:0">` + num.name + ` </h4>
+                                <div class="images-single-flexslider">
+                                    <ul class="slides">
+                                        <li>
+                                            <a class="img-post popup-gallery" href="#"><img src="` + ip + num.content[n].titlePhotoPath + `"
+                                                    alt="image"></a>
+                                        </li>
+                                    </ul>
+                                </div><!-- /.images-single-flexslider -->
+                            </div><!-- /.col-md-4 -->
+                
+                            <div class="col-md-7">
+                                <h4 class="widget-title float-right" style="font-size:10px;margin:0;"><a href="#">more</a></h4>
+                                <div class="flat-about-us">
+                                    <h4>` + num.content[n].title + `</h4>
+                                    <p>从学习中获得快乐
+                                    </p>
+                                    <p class="margin-top-25">` + num.content[0].releaseTime + `<span class="float-right">小王</span></p>
+                                </div><!-- /.flat-about-us -->
+                            </div><!-- /.col-md-4 -->
+                        </div>
+                        <div class="col-md-12 margin-top-39">
+                            <div class="sidebar">
+                                <div class="widget widget-recentpost">
+                                    <ul class="recentpost">`;
+                        n++;
 
-                <div class="text">
-                    <h6>
-                        <a href="#">` + item.title + `</a>
-                    </h6>
-                    <p class="mylist"> ` + item.content + `</p>
-                </div>
-                <div class="maxwidth">
-                    <span class="float-right">` + +`</span>
-                    <span class="float-right margin-right-40">` + +`</span>
-                </div>
-            </li>`
-                    txt = txt.concat(txt2);
-                txt = txt.concat(txt3);
+                        $.each(num.content, function (i, item) {
+                            txt2 = `      <li class="maxwidth">
+    
+                            <div class="text">
+                                <h6>
+                                    <a href="#">` + item.title + `</a>
+                                </h6>
+                                <p class="mylist"> ` + item.content + `</p>
+                            </div>
+                            <div class="maxwidth">
+                                <span class="float-right">` + item.releaseTime + `</span>
+                                <span class="float-right margin-right-40">小王</span>
+                            </div>
+                        </li>`
+                            txt = txt.concat(txt2);
+                            sessionStorage.listtxt = txt;
+                        })
+                    }
 
-                $("#bg-contant").append(txt);
+                })
+                var txt4 = sessionStorage.listtxt;
+                // console.log(txt4)
+                txt4 = txt4.concat(txt3);
+
+                $("#bg-contant").append(txt4);
             },
             error: function () {}
         });
@@ -791,81 +793,60 @@ const getDownload = {
     "get": function () {
         let txt, txt2, txt3;
         $.ajax({
-            url: ip + 'module/get',
+            url: ip + '/module/get',
+            data: {
+                userId: id,
+            },
             type: 'POST',
             success: function (data) {
-
                 $.each(eval(data), function (k, num) {
-                    if (num.type == "文件列表") {
-                        
-               sessionStorage.txt = `                      <div class="col-md-6">
-                
-                <div class="col-md-12">
-                    <div class="col-md-5">
-                        <h4 class="widget-title draggable" style="margin-top:0">` + num.name +` </h4>
-                        <div class="images-single-flexslider">
-                            <ul class="slides">
-                                <li>
-                                    <a class="img-post popup-gallery" href="#"><img src="img/IMG_1589.JPG"
-                                            alt="image"></a>
-                                </li>
-                            </ul>
-                        </div><!-- /.images-single-flexslider -->
-                    </div><!-- /.col-md-4 -->
-        
-                    <div class="col-md-7">
-                        <h4 class="widget-title float-right" style="font-size:10px;margin:0;"><a href="#">more</a></h4>
-                        <div class="flat-about-us">
-                            <h4>` + num.content.fileName + `</h4>
-                            <p>` +  + `
-                            </p>
-                            <p class="margin-top-25">小王
-                                                    <a href="#" class="float-right"><span class="glyphicon glyphicon-download-alt"></span></a>
-                                                    <span class="float-right margin-right-40">` +
-                                                    num.content.uploadTime + `</span>
-                                                </p>
-                        </div><!-- /.flat-about-us -->
-                    </div><!-- /.col-md-4 -->
-                </div>
-                <div class="col-md-12 margin-top-39">
-                    <div class="sidebar">
-                        <div class="widget widget-recentpost">
-                            <ul class="recentpost">`;
+                    if (num.type == "文件下载") {
+                        let n = 0;
+                        txt = `                       <div class="col-md-6">
+                        <div class="col-md-12">
+                            <div class="col-md-5">
+                                <h4 class="widget-title draggable" style="margin-top:0">` + num.name + `</h4>
+                            </div><!-- /.col-md-4 -->
+                            <div class="col-md-7">
+                                <h4 class="widget-title float-right" style="font-size:10px;margin:0;"><a href="#">more</a></h4>
+                            </div><!-- /.col-md-4 -->
+                        </div>
+                        <div class="col-md-12">
+                            <div class="sidebar">
+                                <div class="widget widget-recentpost">
+                                    <ul class="recentpost">              <div class="col-md-12">
+                        <div class="sidebar">
+                            <div class="widget widget-recentpost">
+                                <ul class="recentpost">`;
+
                         $.each(num.content, function (i, item) {
-                            txt2 = `        <li class="maxwidth">
+                            txt2 = `                         <li class="maxwidth">
                             <div class="text">
                                 <h6>
-                                    <a href="#">` +
-                                item.title + `</a>
+                                    <a href="#">` + item.fileName + `</a>
                                 </h6>
-                                <p class="mylist">` + item.content +
-                                `</p>
                             </div>
                             <div class="maxwidth">
                                 <a href="#" class="float-right"><span class="glyphicon glyphicon-download-alt"></span></a>
-                                <span class="float-right margin-right-40">` +
-                                item.releaseTime + `</span>
+                                <span class="float-right margin-right-40">` + item.uploadTime + `</span>
                                 <span class="float-right margin-right-40">小王</span>
                             </div>
                         </li>`
-                           sessionStorage.txt = sessionStorage.txt.concat(txt2);
+                            txt = txt.concat(txt2);
+                            sessionStorage.listfile = txt;
                         })
                     }
 
-
-                });
-
-
-                txt3 = `                    </ul><!-- /.recentpost -->
-                     </div><!-- /.widget-recentpost -->
-                 </div>
-             </div>
-         </div>`
-         console.log(sessionStorage.txt)
-          
-         sessionStorage.txt = sessionStorage.txt.concat(txt3);
-
-                $("#bg-contant").append(sessionStorage.txt);
+                })
+                var txt4 = `               </ul><!-- /.recentpost -->
+                </div><!-- /.widget-recentpost -->
+            </div>
+        </div>
+    </div>`;
+                txt3 = sessionStorage.listfile
+                txt3 = txt3.concat(txt4)
+                // console.log(txt3)
+                $("#bg-contant").append(txt3);
             },
             error: function () {}
         });
@@ -877,25 +858,31 @@ const getDownload = {
 const getSingleTxt = {
     "get": function () {
         $.ajax({
-            url: ip + 'module/get',
+            url: ip + '/module/get',
+            data: {
+                userId: id,
+            },
             type: 'POST',
             success: function (data) {
                 $.each(eval(data), function (k, num) {
                     console.log(num)
                     if (num.type == "单篇文章") {
+                        $.each(num.content, function (i, item) {
                             $("#bg-contant").append(
                                 `<div class="col-md-6">
                             
                             <div class="flat-text-content object text-center">
-                                <h3 class="title draggable">WHY WE DO IT BETTER</h3>
-                                <div> <span style="margin-right:150px;">发布人：`+ num.username +`</span> <span>日期：` + num.releaseTime + `</span></div>
+                                <h3 class="title draggable">` + item.title + `</h3>
+                                <div> <span">发布人：` + item.description + `</span> <span style="display:none">日期：` + num.releaseTime + `</span></div>
                                 <div class="content text-indent" style="text-align: left">
-                                ` + num.content + `
+                                ` + item.content + `
                                 </div>
                             </div><!-- /.text-content -->
                         </div>`
                             )
-                       
+                        })
+
+
                     }
 
 
