@@ -40,7 +40,7 @@
     <script>
         $(document).ready( function load() {
             $.ajax({
-                url: 'http://172.17.164.24:8080/user/getBody',
+                url: 'http://192.168.43.76:8080/user/getBody',
                 type: 'POST',
                 success: function (data) {
                     $("#customer").html(eval(data).obj);
@@ -194,7 +194,7 @@
     </div><!-- /.site-wrapper -->
     </div>
     <!-- Javascript -->
-    <script src="javascript/jquery.dad.js"></script>
+    <!-- <script src="javascript/jquery.dad.js"></script> -->
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/owl.carousel.js"></script>
     <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
@@ -222,7 +222,7 @@
       const getRotation = {
     "get": function () {
         $.ajax({
-            url: 'http://172.17.164.24:8080/module/get',
+            url: 'http://192.168.43.76:8080/module/get',
             type: 'POST',
             data: {
                 userId: 1,
