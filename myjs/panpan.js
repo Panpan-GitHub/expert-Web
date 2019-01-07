@@ -689,11 +689,11 @@ const getImgList = {
                     </div><!-- /.col-md-12 -->`;
 
                         sessionStorage.muti = txt;
-                    }
+                    
                     //组合
                     var txt2 = sessionStorage.muti;
                     $("#bg-contant").append(txt2);
-
+}
                 });
 
             },
